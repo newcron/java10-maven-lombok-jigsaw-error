@@ -8,6 +8,13 @@ OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.1)
 OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.1, mixed mode)
 ```
 
+### Reproduce the issue
+
+* clone this repository and cd into it
+* run `sudo expose-issue.sh` and see the output (this will run it reproducible in a docker container). Alternative just run `./mvnw clean install` - it will probably result in the same
+
+
+### Details
 When running `./mvnw clean install` on this problem, the output looks like this:
 
 ```
